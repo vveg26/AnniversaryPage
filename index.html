@@ -117,7 +117,7 @@
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("2020/11/3 00:00:00");//这个日期是可以修改的
+        BirthDay = new Date("2020/11/3 20:10:00");//这个日期是可以修改的
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -215,8 +215,8 @@ var subtitles = {
         context.textBaseline = "middle"
         context.fillStyle = 'white'
         size = Math.min(fontSize,
-          (canvas.width / context.measureText(text).width) * 0.8 * fontSize,
-          (canvas.height / fontSize) * (isNumber(text) ? 1 : 0.45) * fontSize)
+          (canvas.width / context.measureText(text).width) * 0.4 * fontSize,
+          (canvas.height / fontSize) * (isNumber(text) ? 1 : 0.215) * fontSize)
         context.font = 'bold ' + size + 'px ' + fontFamily
         context.clearRect(0, 0, canvas.width, canvas.height)
         switch(text) {
